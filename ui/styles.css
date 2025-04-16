@@ -1,0 +1,146 @@
+/* Hide Streamlit default UI elements */
+#MainMenu, header, footer {
+    visibility: hidden;
+}
+
+/* Full-screen center layout */
+.stApp {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+/* Global dark theme base */
+body {
+    background-color: #343541; /* ChatGPT dark gray */
+    color: #ececf1;            /* Light neutral for text */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Container centering */
+.centered-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+/* ChatGPT-style button */
+.stButton > button {
+    background-color: #444654 !important;
+    color: #ececf1 !important;
+    border: 1px solid #5c5f72 !important;
+    border-radius: 999px !important;
+    padding: 0.5rem 1.25rem !important;
+    font-weight: 500;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+    position: relative;
+}
+
+.stButton > button:hover {
+    background-color: #565869 !important;
+    transform: scale(1.03);
+}
+
+/* Sidebar styling */
+[data-testid="stSidebar"] {
+    background-color: #202123;
+    color: #ececf1;
+    border-right: 1px solid #2d2f36;
+    min-width: 140px;
+    max-width: 250px;
+    transition: all 0.3s ease;
+}
+
+[data-testid="stSidebar"][aria-expanded="false"] {
+    margin-left: -250px;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    color: #ececf1;
+}
+
+/* Markdown and text elements */
+.stMarkdown, .stCaption, .stHeader {
+    color: #ececf1;
+}
+
+/* Dropdown styling */
+select {
+    background-color: #3e3f4b;
+    color: #ececf1;
+    border: 1px solid #5c5f72;
+    border-radius: 6px;
+    padding: 6px 10px;
+}
+
+/* Selectbox refinements */
+.stSelectbox {
+    cursor: pointer !important;
+}
+.stSelectbox input {
+    cursor: pointer !important;
+    caret-color: transparent !important;
+}
+.stSelectbox div[data-baseweb="select"] {
+    cursor: pointer !important;
+}
+.stSelectbox [role="option"] {
+    cursor: pointer !important;
+}
+.stSelectbox ::selection {
+    background: transparent !important;
+}
+
+/* General container */
+.block-container {
+    padding: 15px !important;
+    margin: 15px !important;
+    max-width: 100% !important;
+}
+
+/* Progress bar */
+.stProgress > div > div > div {
+    background-color: #10a37f !important; /* ChatGPT green */
+}
+.stProgress > div > div {
+    background-color: #3e3f4b !important;
+    height: 10px !important;
+    border-radius: 5px;
+}
+
+/* Loading or status text */
+.st-emotion-cache-1q7spjk {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ececf1 !important;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+/* Optional animation (retained from your original) */
+.rotate {
+    display: inline-block;
+    color: #10a37f;
+    animation: rotation 2s infinite linear;
+}
+@keyframes rotation {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(359deg); }
+}
+
+/* Centered button containers */
+.centered-button-container,
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
