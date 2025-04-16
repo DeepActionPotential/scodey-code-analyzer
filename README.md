@@ -1,49 +1,87 @@
-# CodeReader
 
-A powerful code analysis tool that leverages AI agents to provide comprehensive insights into your codebase. CodeReader analyzes code structure, design patterns, code quality, and generates visual diagrams to help you understand and improve your code.
+
+## scodey-code-analyzer
+
+# Scodey
+
+**Scodey** is an intelligent code analyzer powered by [AutoGen](https://github.com/microsoft/autogen) agents and [streamlit](https://github.com/streamlit). It can scan and interpret code files with the help of AI agents, making your development and review process smarter and more efficient.
+
+
 
 ## Features
 
-- **Code Analysis**
-  - Design pattern detection and recommendations
-  - Code quality assessment
-  - SOLID principles evaluation
-  - Code smell detection
+- Analyze code using AutoGen agents
+- Multi-file support
+- Visual feedback via Mermaid
 
-- **Visualizations**
-  - Mermaid diagrams for code structure
-  - Interactive code previews
-  - File dependency visualization
+---
 
-- **User Interface**
-  - Streamlit-based web interface
-  - Directory selection and analysis
-  - Detailed analysis results display
-  - Code preview with syntax highlighting
+## Installation
 
-## Project Structure
+We recommend using a virtual environment.
 
+### 1. Clone the repo
+```bash
+git clone https://github.com/DeepActionPotential/scodey-code-analyzer
+cd scodey-code-analyzer
 ```
-code-reader/
-├── ui/                   # Streamlit UI components
-│   ├── __init__.py      # Module initialization
-│   ├── introductory_page.py # Initial directory selection UI
-│   └── analysis_page.py  # Analysis results display
-│
-├── agents/               # AI agents for code analysis
-│   ├── __init__.py      # Module initialization
-│   ├── code_overview_agents.py # Code summarization and smell detection
-│   ├── code_structure_agents.py # Design pattern and SOLID analysis
-│   ├── code_visualization_agents.py # Code visualization with Mermaid
-│   ├── directory_agents.py # Directory analysis
-│   └── manager_agent.py   # Agent orchestration
-│
-├── scripts/              # Utility scripts
-│   ├── __init__.py      # Module initialization
-│   └── utils.py         # Helper functions and utilities
-│
-├── config.py            # Configuration settings
-├── requirements.txt     # Project dependencies
-├── app.py              # Main application entry point
-└── run.py              # Application runner
+
+### 2. Set up a virtual environment
+```bash
+python -m venv venv
+source venv/bin/activate      # on Linux/macOS
+venv\Scripts\activate         # on Windows
 ```
+
+### 3. Install dependencies
+```bash
+pip install -r requirements.txt
+```
+
+---
+
+## Usage
+
+Set your api-key in config file, then run:
+
+```bash
+python run.py
+```
+
+---
+
+## Demo
+
+### Select a Directory
+
+![selecte_a_directory](images/1.png)
+
+### Agents analyzing Python files
+
+![Scodey analyzing files](images/2.png)
+
+### agent analysis results
+
+![Agent analysis](images/3.png)
+![Agent analysis](images/4.png)
+
+
+---
+
+## License
+
+This project is licensed under the **MIT License** — see the [LICENSE](LICENSE) file for details.
+
+---
+
+## Contributing
+
+Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
+
+---
+
+## Credits
+
+- Built  mainly using [AutoGen](https://github.com/microsoft/autogen) and [streamlit](https://github.com/streamlit)
+
+
