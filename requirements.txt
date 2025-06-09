@@ -1,6 +1,5 @@
 streamlit>=1.29.0
 autogen>=0.8.5
-tkinter>=8.6.0
 python-dotenv>=1.0.0
 pyyaml>=6.0.1
 typing-extensions>=4.8.0
