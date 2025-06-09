@@ -63,7 +63,6 @@ python run.py
 ### agent analysis results
 
 ![Agent analysis](images/3.png)
-![Agent analysis](images/4.png)
 
 
 ---
